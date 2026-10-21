@@ -68,76 +68,109 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="tagline">TradeSetup — what gets measured, gets accomplished</p>
-    <p class="updated">Last updated: 23 August 2026</p>
+    <p class="updated">Last updated: 21 October 2026</p>
   </header>
 
   <div class="callout">
-    <p><strong>In short:</strong> TradeSetup does not collect, transmit, or
-    share any personal data. Everything you enter stays on your device. There
-    are no accounts, no servers, no analytics, and no advertising.</p>
+    <p><strong>In short:</strong> your journal lives on your phone. TradeSetup
+    sends data off your phone only when you choose to connect a MetaTrader 5
+    account, buy TradeSetup Pro, or send us feedback. We never sell your data,
+    show ads, or track you.</p>
   </div>
 
-  <h2>What the app stores</h2>
+  <h2>What stays on your phone</h2>
   <p>Everything you create in TradeSetup is written to the app's own private
-  storage on your device:</p>
+  storage on your phone:</p>
   <ul>
-    <li>Daily profit and loss figures, trade counts and notes</li>
-    <li>Per-trade entries: profit/loss, the confirmation chosen, the mistake recorded</li>
+    <li>Daily profit and loss, trade counts, notes, and the trades synced from
+    MetaTrader 5</li>
+    <li>Per-trade details: profit or loss, entry time, holding time, the
+    confirmation chosen, the mistake recorded</li>
     <li>Images you attach, and any text you draw on them</li>
     <li>Your rules, and which rules you marked as broken on a given day</li>
     <li>Your saved lists of confirmations, mistakes, patterns and observations</li>
-    <li>App preferences such as Pro mode</li>
+    <li>App preferences such as the theme and Pro mode</li>
   </ul>
-  <p>This data never leaves your device. No other app can read it.</p>
+  <p>We do not keep a copy of your journal. No other app can read it.</p>
 
-  <h2>What the app does not do</h2>
+  <h2>Connecting MetaTrader 5 (optional, TradeSetup Pro)</h2>
+  <p>To fill your journal automatically, you can connect a MetaTrader 5 account
+  with its <strong>investor (read-only) password</strong>. That password can
+  see your trades but cannot place trades or move money.</p>
   <ul>
-    <li><strong>No network access.</strong> The released Android app declares no
-    internet permission, so it is technically incapable of sending your data
-    anywhere.</li>
-    <li><strong>No accounts.</strong> You do not register, sign in, or provide
-    an email address.</li>
-    <li><strong>No analytics or tracking.</strong> No usage measurement, no
-    advertising ID collection, no third-party analytics or crash-reporting
-    software.</li>
-    <li><strong>No advertising.</strong></li>
-    <li><strong>No data sharing or selling.</strong> There is nobody to share
-    it with.</li>
+    <li><strong>What you enter:</strong> the account number, the investor
+    password and the broker's server name.</li>
+    <li><strong>Where it goes:</strong> over an encrypted connection (HTTPS) to
+    TradeSetup's sync service, hosted on Cloudflare. The sync service registers
+    the account with <a href="https://metaapi.cloud">MetaApi</a>, a third-party
+    service that connects to MetaTrader 5 servers. MetaApi keeps the account
+    number, investor password and server so it can read your closed trades and
+    balance.</li>
+    <li><strong>What our sync service keeps:</strong> the account number and
+    server, MetaApi's id for the account, a salted one-way hash of the investor
+    password (never the password itself), when the account was connected and
+    last synced, and a random id for each phone connected to it. That id is a
+    SHA-256 hash of a key created on your phone; it does not identify you.</li>
+    <li><strong>Your trades are not stored on our servers.</strong> Closed
+    trades and the account balance are passed straight to your phone and kept
+    only there.</li>
   </ul>
+
+  <h2>Buying TradeSetup Pro</h2>
+  <p>Payments are handled entirely by Apple through the App Store. We never see
+  your name, Apple ID or payment details.
+  <a href="https://www.revenuecat.com/privacy">RevenueCat</a> checks whether
+  your subscription is active. It receives your purchase history, the same
+  random phone id described above, and basic technical information about your
+  device needed to validate purchases.</p>
+
+  <h2>Sending feedback</h2>
+  <p>If you send feedback from the app, we receive your message, any images you
+  attach, whether your phone runs iOS or Android, and the app version. It is
+  delivered to the developer by email through Google Apps Script. Your name or
+  email address is not included unless you write it in the message.</p>
 
   <h2>Photos and files you choose</h2>
-  <p>Two features open your device's own pickers:</p>
+  <p>Adding an image to a day or a trade opens your phone's own photo picker.
+  Only the image you pick is copied into the app's private storage. Where the
+  app offers to import a MetaTrader report file, only the file you pick is read,
+  once, on your phone. The app does not browse or scan your photos or files.</p>
+
+  <h2>What we do not do</h2>
   <ul>
-    <li><strong>Adding an image</strong> to a day or a trade uses the Android
-    photo picker. Only the image you pick is copied into the app's private
-    storage.</li>
-    <li><strong>Automatic journal</strong> uses the Android file picker to read
-    a MetaTrader 4/5 account history report (CSV or HTML) that you select. The
-    file is read once, its trade rows are written into your journal, and no
-    copy of the original file is kept.</li>
+    <li><strong>No accounts.</strong> You do not register, sign in, or give us
+    an email address.</li>
+    <li><strong>No analytics or tracking.</strong> No usage measurement, no
+    advertising id, no third-party analytics or crash-reporting software.</li>
+    <li><strong>No advertising.</strong></li>
+    <li><strong>No selling or sharing.</strong> Your data goes only to the
+    service providers named above, and only to run the features you use.</li>
   </ul>
-  <p>In both cases the app can only see the specific item you choose. It does
-  not browse or scan your gallery or storage, and it requests no storage
-  permissions.</p>
 
   <h2>Keeping and deleting your data</h2>
-  <p>Your data lives on your device for as long as the app is installed. To
-  delete all of it, uninstall TradeSetup, or go to Android Settings → Apps →
-  TradeSetup → Storage → Clear storage. Because nothing is stored off the
-  device, deletion is immediate and complete.</p>
-  <p>This also means <strong>your journal is not backed up to any server</strong>.
-  If you lose or reset your device, the data is gone unless it was included in
-  your own Android backup.</p>
+  <ul>
+    <li><strong>On your phone:</strong> deleting TradeSetup removes everything it
+    stored. Your journal is not backed up to our servers, so it is gone unless
+    it is in your own phone backup.</li>
+    <li><strong>MetaTrader 5 connection:</strong> Disconnect in the app stops
+    syncing on that phone. The account record and its MetaApi connection are
+    kept, so connecting again later works straight away. To delete them
+    completely, including from MetaApi, email us the account number and server,
+    and we will delete them within 30 days.</li>
+    <li><strong>Purchases:</strong> Apple and RevenueCat keep purchase records
+    as needed for billing and the law.</li>
+  </ul>
 
   <h2>Children</h2>
-  <p>TradeSetup is not directed at children and collects no data from anyone.</p>
+  <p>TradeSetup is not directed at children, and we do not knowingly collect
+  data from anyone under 16.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version will be published at this same
   address with a new "Last updated" date.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy:
+  <p>Questions, or a request to delete your MetaTrader 5 data:
   <a href="mailto:temuunbold.10@gmail.com">temuunbold.10@gmail.com</a></p>
 
   <footer>TradeSetup · Temuunbold Zorigt</footer>
