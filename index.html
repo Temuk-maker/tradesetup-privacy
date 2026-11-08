@@ -68,13 +68,14 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="tagline">TradeSetup — what gets measured, gets accomplished</p>
-    <p class="updated">Last updated: 21 October 2026</p>
+    <p class="updated">Last updated: 8 November 2026</p>
   </header>
 
   <div class="callout">
-    <p><strong>In short:</strong> your journal lives on your phone. TradeSetup
-    sends data off your phone only when you choose to connect a MetaTrader 5
-    account, buy TradeSetup Pro, or send us feedback. We never sell your data,
+    <p><strong>In short:</strong> your journal lives on your phone. On iOS,
+    RevenueCat checks your Pro status when the app opens. Connecting MetaTrader
+    5 sends your account details to our sync service and MetaApi, and sending
+    feedback shares the message and images you choose. We never sell your data,
     show ads, or track you.</p>
   </div>
 
@@ -110,7 +111,9 @@
     server, MetaApi's id for the account, a salted one-way hash of the investor
     password (never the password itself), when the account was connected and
     last synced, and a random id for each phone connected to it. That id is a
-    SHA-256 hash of a key created on your phone; it does not identify you.</li>
+    SHA-256 hash of a key created on your phone. We use it to link that phone's
+    subscription and MT5 connection; it does not contain your name or email
+    address.</li>
     <li><strong>Your trades are not stored on our servers.</strong> Closed
     trades and the account balance are passed straight to your phone and kept
     only there.</li>
@@ -120,9 +123,10 @@
   <p>Payments are handled entirely by Apple through the App Store. We never see
   your name, Apple ID or payment details.
   <a href="https://www.revenuecat.com/privacy">RevenueCat</a> checks whether
-  your subscription is active. It receives your purchase history, the same
-  random phone id described above, and basic technical information about your
-  device needed to validate purchases.</p>
+  your subscription is active when the iOS app opens, including before a
+  purchase, and provides subscription analytics. It receives your purchase
+  history, the same random phone id described above, and basic technical
+  information about your device needed to validate purchases.</p>
 
   <h2>Sending feedback</h2>
   <p>If you send feedback from the app, we receive your message, any images you
@@ -140,10 +144,12 @@
   <ul>
     <li><strong>No accounts.</strong> You do not register, sign in, or give us
     an email address.</li>
-    <li><strong>No analytics or tracking.</strong> No usage measurement, no
-    advertising id, no third-party analytics or crash-reporting software.</li>
+    <li><strong>No advertising tracking or app-usage analytics.</strong> We do
+    not measure taps or screens and do not use an advertising id. RevenueCat
+    processes purchase information for subscription analytics as described
+    above. Crash reporting is disabled.</li>
     <li><strong>No advertising.</strong></li>
-    <li><strong>No selling or sharing.</strong> Your data goes only to the
+    <li><strong>No selling.</strong> Your data goes only to the
     service providers named above, and only to run the features you use.</li>
   </ul>
 
